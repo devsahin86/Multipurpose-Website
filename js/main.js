@@ -4,21 +4,20 @@
 /*----------------------------
  jQuery MeanMenu
 ------------------------------ */
-	jQuery('nav#dropdown').meanmenu();	
-	
+  jQuery('nav#dropdown').meanmenu();  
+
 /*----------------------------
  wow js active
 ------------------------------ */
  new WOW().init();
  
 /*----------------------------
- owl active
+ Slider active
 ------------------------------ */  
-  $(".slider-area").owlCarousel({
-      autoPlay: true,
-	  dots: true,
+  $(".slider-content").owlCarousel({
+      autoPlay: true, 
 	  slideSpeed:2000,
-	  pagination:false,
+	  pagination:true,
 	  navigation:false,	  
       items : 1,
 	  /* transitionStyle : "fade", */    /* [This code for animation ] */
@@ -28,138 +27,22 @@
 	  itemsTablet: [768,1],
 	  itemsMobile : [479,1],
   });
-  // Custom Navigation Events
-  $(".slide-dots-next").on('click', function () {
-    owl.trigger('owl.next');
-  });
-
-  $(".slide-dots-prev").on('click', function () {
-    owl.trigger('owl.prev');
-  });
- 
-/*----------------------------
-Our Live Camp
------------------------------- */  
-	var owl = $(".total-camp");
-  	  owl.owlCarousel({
-      autoPlay: true, 
-	  slideSpeed:2000,
-	  pagination:false,  
-      items : 1,
-      itemsDesktop : [1199,1],
-	  itemsDesktopSmall : [980,1],
-	  itemsTablet: [768,1],
-	  itemsMobile : [479,1],
-  });
-  // Custom Navigation Events
-  $(".next").on('click', function () {
-    owl.trigger('owl.next');
-  });
-
-  $(".prev").on('click', function () {
-    owl.trigger('owl.prev');
-  });
-/*----------------------------
-our animal
------------------------------- */  
-  $(".total-area").owlCarousel({
-      autoPlay: true, 
-	  slideSpeed:2000,
-	  pagination:false,
-	  navigation:true,	  
-      items : 5,
-	  /* transitionStyle : "fade", */    /* [This code for animation ] */
-	  navigationText:["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],
-      itemsDesktop : [1199,4],
-	  itemsDesktopSmall : [980,3],
-	  itemsTablet: [600,2],
-	  itemsMobile : [350,1],
-  });
  /*----------------------------
-our animal
------------------------------- */  
-  $(".map-gallary").owlCarousel({
-      autoPlay: true, 
-	  slideSpeed:2000,
-	  pagination:false,
-	  navigation:true,	  
-      items : 5,
-	  /* transitionStyle : "fade", */    /* [This code for animation ] */
-	  navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-      itemsDesktop : [1199,4],
-	  itemsDesktopSmall : [980,3],
-	  itemsTablet: [768,2],
-	  itemsMobile : [479,1],
-  });
-/*----------------------------
-magnific Popup image
------------------------------- */
-	$('.gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-			}
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
-				return element.find('img');
-			}
-		}
-		
-	});
-
-
-/*----------------------------
- price-slider active
------------------------------- */  
-	  $( "#slider-range" ).slider({
-	   range: true,
-	   min: 40,
-	   max: 600,
-	   values: [ 60, 570 ],
-	   slide: function( event, ui ) {
-		$( "#amount" ).val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
-	   }
-	  });
-	  $( "#amount" ).val( "£" + $( "#slider-range" ).slider( "values", 0 ) +
-	   " - £" + $( "#slider-range" ).slider( "values", 1 ) );  
-	   
-/*----------------------------
-single details
------------------------------- */  
-  $(".animal-slider").owlCarousel({
-      autoPlay: true, 
-	  slideSpeed:2000,
-	  pagination:false,
-	  navigation:true,	  
-      items : 6,
-	  /* transitionStyle : "fade", */    /* [This code for animation ] */
-	  navigationText:["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],
-      itemsDesktop : [1199,5],
-	  itemsDesktopSmall : [980,3],
-	  itemsTablet: [600,2],
-	  itemsMobile : [450,1],
-  });
-  
- /*------------------------------------
- jquery Serch Box activation code 
- --------------------------------------*/
-	 $(".search-icon").on('click', function(){
-	    $(".search-box-area").slideToggle('slow');
-	});
-
-	   
+  Promos active
+ ------------------------------ */  
+   $(".total-promos-area").owlCarousel({
+       autoPlay: true, 
+ 	  slideSpeed:2000,
+ 	  pagination:false,
+ 	  navigation:true,	  
+       items : 3,
+ 	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+ 	  navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+       itemsDesktop : [1199,3],
+ 	  itemsDesktopSmall : [980,2],
+ 	  itemsTablet: [720,1],
+ 	  itemsMobile : [479,1],
+   });   
 /*--------------------------
  scrollUp
 ---------------------------- */	
@@ -169,5 +52,60 @@ single details
         scrollSpeed: 900,
         animation: 'fade'
     }); 	   
- 
+ /*------------------------------------
+ jquery Serch Box activation code 
+ --------------------------------------*/
+	 $(".search-area a").on('click', function(){
+	    $(".search-box-area").slideToggle('slow');
+	});
+/* ----------------------------
+ mixitup active
+ ------------------------------*/  
+  $('#Container').mixItUp();
+
+
+/*----------------------------
+Product Items added
+------------------------------ */
+	$('.spinner .btn:first-of-type').on('click', function() {
+	  $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
+	});
+	$('.spinner .btn:last-of-type').on('click', function() {
+	  $('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
+	}); 
+
+/*-----------------------------------
+Bootstrap Step
+-----------------------------------*/
+$(window).on('load', function() {
+  $('.done').on('click', function () {
+    var this_li_ind = $(this).parent().parent("li").index();
+    if($('.payment-wizard li').hasClass("jump-here")){
+      $(this).parent().parent("li").removeClass("active").addClass("completed");
+      $(this).parent(".wizard-content").slideUp();
+      $('.payment-wizard li.jump-here').removeClass("jump-here");
+    }else{
+      $(this).parent().parent("li").removeClass("active").addClass("completed");
+      $(this).parent(".wizard-content").slideUp();
+      $(this).parent().parent("li").next("li:not('.completed')").addClass('active').children('.wizard-content').slideDown();
+    }
+  });
+	$(".click-seat").on('click', function () {
+		$(this).toggleClass('click-seat-change');
+		$(this).find('input[type="checkbox"]').attr('checked','checked');
+	});
+	
+  $('.payment-wizard li .wizard-heading').on('click', function () {
+    if($(this).parent().hasClass('completed')){
+      var this_li_ind = $(this).parent("li").index();   
+      var li_ind = $('.payment-wizard li.active').index();
+      if(this_li_ind < li_ind){
+        $('.payment-wizard li.active').addClass("jump-here");
+      }
+      $(this).parent().addClass('active').removeClass('completed');
+      $(this).siblings('.wizard-content').slideDown();
+    }
+  });
+})
+
 })(jQuery); 
