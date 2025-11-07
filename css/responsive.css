@@ -1,239 +1,294 @@
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {
-	.header-area .main-menu ul{
-		margin:0px;
+  .section-title h2:before {
+    width: 80px;
+    left: 0;
+  }
+  .section-title h2:after {
+    width: 80px;
+    right: 0;
+  }
+  .calender-area .table-responsive .table tbody tr td {
+    margin: 12px;
+  }
+  .activities-area .tab-content .tab-pane .media {
+    height: 300px;
+  }
+	.calender-area.fiveee .table-responsive .table tbody tr td {
+		margin: 15px 9px;
 	}
-	.header-area .main-menu ul li{
-		padding: 10px 12px;
+	.calender-area.fiveee .table-responsive .table tbody tr.fiveee-trr td {
+		margin: 10px 10px;
 	}
 }
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 991px) {
-	#header{
-		height: 240px;
+@media only screen and (max-width: 992px) {
+  .activities-area .tab-content .tab-pane .media {
+    height: auto;
+  }
+  .header-area .main-menu ul li{
+    padding: 40px 18px;
+  }
+	.tutor-area {
+		background-size: 100% 43%;
+		padding: 0 0 200px;
 	}
-	.header-area .search-area {
-		margin-top: -5px;
+	.section-title h2::before , .section-title h2::after {
+		width: 17%;
 	}
-	.header-area .main-menu ul li a {
-		font-size: 14px;
+	.single-services-area .services-content {
+		background-position: left bottom;
+		background-size: 85% 40%;
+		padding-bottom: 180px;
 	}
-	.watching-movie-area .single-movie-details-area .movie-details-text {
-		margin: 15px 0px;
+	.video-area .video {
+		margin-top: 30px;
 	}
-	.watching-movie-area .single-movie-details-area .movie-details-text::before {
-		display: none;
+	.single-services-area {
+		padding: 100px 0 35px;
 	}
-	.zooks-promos-area .total-promos-area {
-		margin-left: 0px;
+
+	.activities-area .topbar-area {
+		text-align: center;
 	}
-	.footer-top-area .widget {
-		margin-bottom: 40px;
+	.activities-area .topbar-area .activities-menu ul.nav.nav-tabs {
+		text-align: center;
+		margin-bottom: 20px;
 	}
-	.movies-show-area .movies-search-box {
-		height: auto;
-		display: inline-block;
+	.activities-area .tab-content .tab-pane .media .pull-left {
+		float: none !important;
 	}
-	.movies-show-area .button {
-		margin-top: 0px;
-		display: inline-block;
-		padding-right: 15px;
-	}
-	.breadcumb-area {
+	.activities-area .tab-content .tab-pane .media .pull-left figure {
+		width: 80%;
+		margin-left: 12%;
+	}	
+	.contact-area .form-area .leave-comments-area .btn-send {
+		 margin-top: 10px;
+	}	
+	.events-area .tab-pane .single-events .images a img {
 		width: 100%;
+	}	
+	.news-letter .text h2 {
+		font-size: 23px;
+	}	
+	.sidebar-area .widget .navbar-form .form-group input {
+		width: 300px;
+		margin-top: 20px;
+	}	
+	.single-events-area {
+		padding: 100px 0 0px;
 	}
-	footer .footer-top-area {
-		padding: 50px 0 20px;
+	.slider-area .single-slider h2{
+		font-size: 48px;
+		text-align: center;
 	}
-	.page-banner-area img {
-		height: 340px;
-	}
-	.page-banner-area .banner-content {
-		left: 10px;
-	}
-	.page-banner-area .banner-content ul li {
-		font-size: 15px;
-	}
-	.page-banner-area .banner-content ul {
-		margin-left: 40px;
-	}
-	.page-banner-area .banner-content h1{
-		font-size: 25px;
-	}
-	.show-ticket-area .ticket-form {
-		padding: 0px 80px;
-	}
-	.breadcumb-area .breadcumb {
-		margin-left: 20px;
+	.slider-area .single-slider{
+		text-align: center;
 	}
 }
-
- 
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 767px) {
-	#header{
-		height: 55px;
-	}
-	#header .header-area{
-		position: relative;
-		padding: 18px;
-	}
-	.logo-area,
-	.main-menu,
-	.header-right{
-		display: none;
-	}
-	.header-area .user-area{
-		top: -8px;
-	}
-	.slider-area .slider-content .single-slide-content{
-		text-align: center;
-	}
-	.slider-area .slider-content .single-slide-content h1{
-		font-size: 48px;
-	}
-	.slider-area .slider-content .single-slide-content h2{
-		font-size: 60px;
-	}
-	.home-services-area .single-services{
-		padding: 30px 0;
-	}
-	.home-services-area .single-services p{
-		margin: 0;
-	}
-	.section-title h2{
-		font-size: 36px;
-	}
-	.header-area .user-area .loginpage .loginpage-body .login-left{
+  .header-area .logo-area{
+    padding: 30px 0;
+  }
+  .mobile-menu-area{
+    display:block;
+  }
+  .header-area .main-menu {
+    display: none;
+  }
+  .slider-area .single-slider {
+    padding: 120px 0;
+  }
+  .slider-area .single-slider h2 {
+    font-size: 60px;
+  }
+  .reason-to-come-zoo-area {
+    text-align: center;
+  }
+  .section-title h2:before,
+  .section-title h2:after {
+    display: none;
+  }
+  .exhibition-content-area .exhibition-details ul li {
+    margin: 0;
+  }
+  .exhibition-content-area .exhibition-details ul li span {
+    display: block;
+    margin: 0 30px 0 0;
+  }
+  .exhibition-content-area .exhibition-details h2 span {
+    float: inherit;
+  }
+  .news-letter .text h2 {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .footer-bottom-area .footer-menu,
+  .footer-bottom-area .copyright {
+    text-align: center;
+  }
+  .tutor-area .tutor-content .import-notice .color-area:before {
+    height: 70px;
+  }
+  .events-area .tab-pane .single-events .images a img {
+    width: 100%;
+  }
+  .membership-area {
+    text-align: center;
+  }
+  .membership-area .membership .price h2:after {
+	right: 0;
+	margin: 0 auto 10px;
+  }
+  .contact-area .contact-text {
+    text-align: center;
+  }
+  .calender-area .table-responsive .table tbody tr td {
+    margin: 8px;
+    padding: 10px 0;
+  }
+	.video-area .video iframe {
 		width: 100%;
-		float: inherit;
+		height: 340px;
 	}
-	.header-area .user-area .loginpage .loginpage-body .login-right{
-		padding: 0;
-		height: auto;
-		width: 1005;
+	.meseum-cafe-area .meseum-cafe-food {
+		margin-top: 30px;
 	}
-	.mobile-menu-area{
-		display: block;
+	.tutor-area {
+		background-size: 150% 30%;
+		background-position: right bottom;
 	}
-	.slider-area {
-		padding: 90px 0;
+	.pulication-area .single-publication {
+		margin-right: 0px;
+		margin-top: 30px;
 	}
-	.watching-movie-area .topbar-right {
-		margin-top:20px;
+	.slider-area .single-slider h2 {
+		font-size: 45px;
 	}
-	footer .footer-top-area .widget .footer-one::after {
-		display: none;
+	.events-area .topbar-area .activities-menu ul.nav.nav-tabs li a {
+		padding: 3px 15px 5px;
+		margin-bottom: 15px;
 	}
-	.single-movie-content .payment-wizard li.active .wizard-content .panel-body .single-enties {
-		margin: 40px 0;
+
+	.events-area .tab-pane .single-events .events-details .events-informations ul li {
+		width: 100%;
 	}
-	.single-movie-content .payment-wizard li.active .wizard-content .panel-body .single-enties .entities-properties ul li .input-group-btn-vertical > form input {
-		margin-top: -20px;
-		width: 50px;
+	.sidebar-area .widget .navbar-form .form-group i {
+		top: 47%;
 	}
-	.portfolio-one-area .portfolio-menu.fouur ul li {
-		margin-bottom: 10px;
+	.single-events-area.thrre .events-area .next-prev-button ul li a {
+		width: 135px;
+		padding: 5px 0px 5px 0px;
 	}
-	.zooks-promos-area{
+	.reason-to-come-zoo-area,
+	.showcase-area,
+	.video-area,
+	.recent-zooks-photo-area{
 		padding: 50px 0;
 	}
-	.portfolio-one-area{
-		padding: 0 0 20px;
-	}
-	footer .footer-top-area{
-		text-align: center;
-	}
-	.zooks-promos-area .total-promos-area .owl-controls .owl-buttons .owl-prev{
-		left: 0 !important;
-	}
-	.zooks-promos-area .total-promos-area .owl-controls .owl-buttons .owl-next{
-		right: 0 !important; 
-	}
-	.show-ticket-area .ticket-form .contact-details form fieldset .connected-area .btn-green.done{
-		margin-bottom: 50px !important;
-	}
-	.show-ticket-area .ticket-form .contact-details form fieldset .connected-area i{
-		display: none;
+	.opening-price-area,
+	.events-area,
+	.membership-area,
+	.activities-area,
+	.single-events-area{
+		padding: 50px 0 0;
 	}
 }
- 
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 479px) {
-	.watching-movie-area .single-movie-details-area .movie-details .media a.pull-left {
-		float: none !important;
-		margin: 0px 20px 20px;
+	.section-title h2,
+	.video-area .video-content h2{
+		font-size: 24px;
 	}
-	.zooks-promos-area {
-		padding: 50px 35px;
+	.opening-price-area .meseum-openning-area h2{
+		font-size: 28px;
 	}
-	.home-services-area .advertise-area img {
-		height: 170px;
+	.showcase-area .showcase-slider .owl-buttons {
+		display: none;
 	}
-	.home-services-area .advertise-area .advertise-content {
-		top: 3%;
-		right: 8%;
-		width: 80%;
+	.slider-area .single-slider h2{
+		font-size: 28px !important;
 	}
-	.home-services-area .advertise-area .advertise-content h1{
-		margin-bottom:3px;
-		font-size: 33px;
+  .slider-area .single-slider {
+    padding: 70px 0;
+  }
+  .slider-area .single-slider h2 {
+    font-size: 40px;
+  }
+  .promo-area .promo-text {
+    width: 100%;
+  }
+  .calender-area .table-responsive h3 i {
+    margin: 0 10px;
+  }
+  .calender-area .table-responsive .specific ul {
+    padding: 5px;
+  }
+	.meseum-cafe-area .meseum-cafe-content h2 {
+		font-size: 40px;
 	}
-	.home-services-area .advertise-area .advertise-content h3 {
-		margin-bottom:6px;
+	.video-area .video iframe {
+		height: 300px;
 	}
-	.home-services-area .advertise-area .advertise-content a {
-		float: right;
-		padding: 0px 20px;
-	}
-	.slider-area .slider-content .single-slide-content h1 {
+	.tutor-area .tutor-content .tutor-title.twooo h2 {
 		font-size: 30px;
 	}
-	.slider-area .slider-content .single-slide-content h2 {
-		font-size: 45px;
+	.footer-bottom-area .footer-menu ul li a {
+		padding: 0px 10px;
 	}
-	.show-ticket-area .ticket-form {
-		padding: 0px 0px;
+
+	.slider-area .single-slider h2 {
+		font-size: 35px;
 	}
-	.page-banner-area .banner-content {
-		top: 14%;
-		width: 80%
+	.showcase-area .showcase-slider .single-showcase {
+		margin-right: 0px;
 	}
-	.page-banner-area .banner-content h1 {
-		margin-bottom: 10px;
+	.exhibition-menu ul.nav.nav-tabs li.active a , .exhibition-menu ul.nav.nav-tabs li a {
+		padding: 5px 10px;
 	}
-	.page-banner-area .banner-content ul li {
-		padding:3px 0px;
+	.exhibition-content-area .exhibition-details ul {
+		margin-right: 0%;
 	}
-	.rent-cinema-area .birthday img {
-		height: 170px;
+	.exhibition-content-area .exhibition-details h2 span {
+		margin-top: 15px;
+		display: inline-block;
 	}
-	.rent-cinema-area .birthday .birthday-details h1 {
-		margin-bottom: 0px;
+	.exhibition-content-area .exhibition-details h2 {
+		font-size: 28px;
+		display: block;
+		margin: 0 0 35px;
 	}
-	.rent-cinema-area .birthday .birthday-details p {
-		margin-bottom: 10px;
+	.promo-area {
+		padding-top: 60px;
 	}
-	.single-movie-show-area .movie-time-area.fouur .movie-time ul li {
-		margin: 3px 3px;
-		padding: 3px 10px;
+	.promo-area .promo-text h2 {
+		font-size: 50px;
 	}
-	.single-movie-show-area .movie-selection-area {
-		margin: 40px 20px;
+	.exhibition-content-area .image-area .images {
+		height: 165px;
 	}
-	.single-movie-show-area .movie-selection-area fieldset select {
-		width:100%;
+	.exhibition-content-area .image-area .images img {
+		height: 100%;
 	}
-	.single-movie-show-area .single-movie-show .movie-details .video iframe {
-		height:300px;
+	.activities-area .topbar-area .activities-menu ul.nav.nav-tabs li.active a , .activities-area .topbar-area .activities-menu ul.nav.nav-tabs li a {
+		padding: 2px 15px 4px;
+	}
+	.contact-area .form-area .leave-comments-area .btn-send {
+		padding: 8px;
+	}
+	.sidebar-area .widget .navbar-form .form-group input {
+		width: 100%;
 	}
 }
-
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {
+	.exhibition-content-area .exhibition-details h2 {
+		font-size: 24px;
+	}
 }
