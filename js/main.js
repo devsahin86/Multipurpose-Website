@@ -4,127 +4,217 @@
 /*----------------------------
  jQuery MeanMenu
 ------------------------------ */
-$('#menu').slicknav();
-
-/*----------------------------
-Search Box
------------------------------- */
-  $(".search-box-icon").on('click', function(){
-      $(".search-box").show("slow");
-    });
+	jQuery('nav#dropdown').meanmenu();	
 	
 /*----------------------------
  wow js active
 ------------------------------ */
  new WOW().init();
-/*--------------------------
-bxslider active
----------------------------- */ 
-  //Home slider     
-  $('.item-content').bxSlider({
-    pagerCustom: '.item-thumbnail',
-    mode: 'fade',
-    speed:1000,
-    auto:true
-  });
-
-  //About slider
-  $('.content-about').bxSlider({
-    pagerCustom: '.image-action',
-    mode: 'fade',
-  });
-
-  //Testimonial slider
-  $('.testimonial').bxSlider({
-    pagerCustom: '.thumb-list',
-    mode: 'fade',
-  });
+ 
 /*----------------------------
  owl active
------------------------------- */
-  //twitter slider
-  $(".twitter-slider").owlCarousel({
-    autoPlay: true, 
-    pagination:false,
-    items : 1,
-    itemsDesktop : [1199,1],
-    itemsDesktopSmall : [980,1],
-    itemsTablet: [768,1],
-    itemsMobile : [479,1],
-  });
-  //Event slider 
-  var owl = $(".event-slider");
-  $(".event-slider").owlCarousel({
-    autoPlay: false, 
-    pagination:false,
-    items : 3,
-    itemsDesktop : [1199,3],
-    itemsDesktopSmall : [980,2],
-    itemsTablet: [750,1],
-    itemsMobile : [479,1],
-  });
-  // Custom Navigation Events
-  $(".next").on('click', function(){
-    owl.trigger('owl.next');
+------------------------------ */  
+  $(".text-slider").owlCarousel({
+      autoPlay: true, 
+	  slideSpeed:500,
+	  pagination:false,
+	  navigation:false,	  
+      items : 1,
+	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+	  navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      itemsDesktop : [1199,1],
+	  itemsDesktopSmall : [980,1],
+	  itemsTablet: [768,1],
+	  itemsMobile : [479,1],
   });
 
-  $(".prev").on('click', function(){
-    owl.trigger('owl.prev');
-  });
+   
 /*----------------------------
- pickmeup active
------------------------------- */
-  pickmeup('.clander', {
-    flat : true
+ Tab Content
+------------------------------ */  
+  $(".content-fetures").owlCarousel({
+      autoPlay: true, 
+	  slideSpeed:500,
+	  pagination:false,
+	  navigation:true,	  
+      items : 1,
+	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+	  navigationText:["<i class='fa fa-arrow-left'></i>","<i class='fa fa-arrow-right'></i>"],
+      itemsDesktop : [1199,1],
+	  itemsDesktopSmall : [980,1],
+	  itemsTablet: [768,1],
+	  itemsMobile : [479,1],
+  });
+  /*----------------------------
+   Tab Content
+  ------------------------------ */  
+    $(".images-fetures").owlCarousel({
+        autoPlay: true, 
+  	  slideSpeed:500,
+  	  pagination:true,
+  	  navigation:false,	  
+        items : 1,
+  	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+  	  navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+        itemsDesktop : [1199,1],
+  	  itemsDesktopSmall : [980,1],
+  	  itemsTablet: [768,1],
+  	  itemsMobile : [479,1],
+    });
+  /*----------------------------
+   Tab Content
+  ------------------------------ */  
+    $(".upcomming-events-slider").owlCarousel({
+        autoPlay: true, 
+  	  slideSpeed:500,
+  	  pagination:false,
+  	  navigation:true,	  
+        items : 3,
+  	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+  	  navigationText:["<i class='fa fa-arrow-left'></i>","<i class='fa fa-arrow-right'></i>"],
+        itemsDesktop : [1199,3],
+  	  itemsDesktopSmall : [980,2],
+  	  itemsTablet: [768,1],
+  	  itemsMobile : [479,1],
+    });
+    /*----------------------------
+     Tab Content
+    ------------------------------ */  
+    var shedule = $(".show-shedule-table");
+
+    shedule.owlCarousel({
+      autoPlay: true, 
+      slideSpeed:500,
+      pagination:false,
+      navigation:false,    
+      items : 1,
+      itemsDesktop : [1199,1],
+      itemsDesktopSmall : [980,1],
+      itemsTablet: [768,1],
+      itemsMobile : [479,1],
+    });
+   
+    // Custom Navigation Events
+    $('.next').on('click', function () {
+      shedule.trigger('owl.next');
+    })
+    $('.prev').on('click', function () {
+      shedule.trigger('owl.prev');
+    })
+    /*----------------------------
+   Tab Content
+  ------------------------------ */  
+    $(".single-product-thumb").owlCarousel({
+        autoPlay: false, 
+      slideSpeed:500,
+      pagination:false,
+      navigation:true,    
+        items : 1,
+      /* transitionStyle : "fade", */    /* [This code for animation ] */
+      navigationText:["<i class='fa fa-arrow-right'></i>","<i class='fa fa-arrow-left'></i>"],
+        itemsDesktop : [1199,1],
+      itemsDesktopSmall : [980,1],
+      itemsTablet: [768,1],
+      itemsMobile : [479,1],
+    });
+  /*----------------------------
+   Tab Content
+  ------------------------------ */  
+    $(".related-product-slider").owlCarousel({
+        autoPlay: true, 
+  	  slideSpeed:500,
+  	  pagination:false,
+  	  navigation:true,	  
+        items : 4,
+  	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+  	  navigationText:["<i class='fa fa-arrow-left' style='color:#e3bf8d'></i>","<i class='fa fa-arrow-right' style='color:#e3bf8d'></i>"],
+        itemsDesktop : [1199,4],
+  	  itemsDesktopSmall : [991,3],
+  	  itemsTablet: [768,2],
+  	  itemsMobile : [479,1],
+    });
+  /*----------------------------
+   Tab Content
+  ------------------------------ */  
+    $(".our-Partner").owlCarousel({
+        autoPlay: true, 
+      slideSpeed:500,
+      pagination:false,
+      navigation:true,    
+        items : 5,
+      /* transitionStyle : "fade", */    /* [This code for animation ] */
+      navigationText:["<i class='fa fa-arrow-left'></i>","<i class='fa fa-arrow-right'></i>"],
+        itemsDesktop : [1199,4],
+      itemsDesktopSmall : [980,3],
+      itemsTablet: [760,2],
+      itemsMobile : [479,1],
+    });
+  /*----------------------------
+   Tab Content
+  ------------------------------ */  
+    $(".twitter-slide").owlCarousel({
+        autoPlay: true, 
+  	  slideSpeed:500,
+  	  pagination:false,
+  	  navigation:true,	  
+        items : 1,
+  	  /* transitionStyle : "fade", */    /* [This code for animation ] */
+  	  navigationText:["<i class='fa fa-arrow-left'></i>","<i class='fa fa-arrow-right'></i>"],
+        itemsDesktop : [1199,1],
+  	  itemsDesktopSmall : [980,1],
+  	  itemsTablet: [768,1],
+  	  itemsMobile : [479,1],
+    });
+
+/*----------------------------
+ price-slider active
+------------------------------ */  
+  $( "#slider-range" ).slider({
+   range: true,
+   min: 40,
+   max: 600,
+   values: [ 60, 570 ],
+   slide: function( event, ui ) {
+	$( "#amount" ).val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+   }
+  });
+  $( "#amount" ).val( "£" + $( "#slider-range" ).slider( "values", 0 ) +
+   " - £" + $( "#slider-range" ).slider( "values", 1 ) );  
+
+/*----------------------------
+mixitup active
+------------------------------ */ 
+   $('#container').imagesLoaded( function() {
+    $('#Container').mixItUp();
   });
 
 /*----------------------------
-magnific Popup image
------------------------------- */
-  $('.gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    closeOnContentClick: false,
-    closeBtnInside: false,
-    mainClass: 'mfp-with-zoom mfp-img-mobile',
-    image: {
-      verticalFit: true,
-      titleSrc: function(item) {
-        return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-      }
-    },
-    gallery: {
-      enabled: false
-    },
-    zoom: {
-      enabled: true,
-      duration: 300, // don't foget to change the duration also in CSS
-      opener: function(element) {
-        return element.find('img');
-      }
-    }
-    
-  });
-/*----------------------------
-isotope active
------------------------------- */     
-  var $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    stagger: 30
-  });
-
-  $('.gallery-menu').on( 'click', '.button', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
-
-  // change is-checked class on buttons
-  $('.filter').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', '.button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
+ Flex Slider About us page
+------------------------------ */ 
+  $(window).on('load', function() {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      controlNav: "thumbnails"
     });
   });
-
+/*----------------------------
+ Modal center
+------------------------------ */ 
+  function reposition() {
+    var modal = $(this),
+      dialog = modal.find('.modal-dialog');
+    modal.css('display', 'block');
+    dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2));
+  }
+  $('.modal').on('show.bs.modal', reposition);
+  $(window).on('resize', function() {
+    $('.modal:visible').each(reposition);
+  });
+  $('#show-info-modal').on('hide.bs.modal', function(e) {    
+    var $if = $(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
+  });
+ 
 })(jQuery); 
